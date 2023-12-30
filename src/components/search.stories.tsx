@@ -15,6 +15,9 @@ const meta = {
   argTypes: {
     label: {
       type: 'string'
+    },
+    onSearch: {
+      action: 'onSearch'
     }
   },
   play: async ({args, canvasElement}) => {
