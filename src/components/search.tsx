@@ -1,10 +1,11 @@
 import { useCallback, useRef } from "react"
 
 interface Props {
-    onSearch?(query?: string): void
+    onSearch?(query?: string): void,
+    label?: string
 }
 
-export default function Search({onSearch}: Props) {
+export default function Search({ onSearch, label }: Props) {
     const inputRef = useRef<HTMLInputElement>(null);
     const onClick = useCallback(() => {
         if (onSearch) {
@@ -13,6 +14,7 @@ export default function Search({onSearch}: Props) {
     }, [onSearch]);
 
     return <>
+        {label && <p>{label}</p>}
         <input type="search" ref={inputRef} />
         <button onClick={onClick}>Szukaj</button>
     </>
