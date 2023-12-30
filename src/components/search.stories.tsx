@@ -1,16 +1,31 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent } from '@storybook/testing-library';
 
 import Search from './search';
+
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Components/Search',
   component: Search,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
+  argTypes: {
+    label: {
+      type: 'string'
+    }
+  },
+  play: async ({args, canvasElement}) => {
+    const input = canvasElement.querySelector('input');
+    const button = canvasElement.querySelector('button');
+
+    await userEvent.type(input!, 'foo', {
+      delay: 100
+    });
+    await userEvent.click(button!);
+  }
 } satisfies Meta<typeof Search>;
 
 export default meta;
