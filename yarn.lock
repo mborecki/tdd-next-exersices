@@ -2904,6 +2904,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/addon-a11y@npm:^7.6.6":
+  version: 7.6.6
+  resolution: "@storybook/addon-a11y@npm:7.6.6"
+  dependencies:
+    "@storybook/addon-highlight": "npm:7.6.6"
+    axe-core: "npm:^4.2.0"
+  checksum: b6adc0c90a49909c03bb288f376ba9560f55928f7a4a5441bc1965bbe95a5a7d29ade323743698ec1ca03271dbf07d818aba79100ab300642bf07c5f75e033d9
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-actions@npm:7.6.6":
   version: 7.6.6
   resolution: "@storybook/addon-actions@npm:7.6.6"
@@ -5209,6 +5219,13 @@ __metadata:
   version: 1.0.5
   resolution: "available-typed-arrays@npm:1.0.5"
   checksum: c4df567ca72d2754a6cbad20088f5f98b1065b3360178169fa9b44ea101af62c0f423fc3854fa820fd6895b6b9171b8386e71558203103ff8fc2ad503fdcc660
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0":
+  version: 4.8.3
+  resolution: "axe-core@npm:4.8.3"
+  checksum: 762392d03e49b5613e0d58c19bfe0bb0df253a56d6296b07d6d968729acef4ad25822e560f067c563368ac52a62c48cb341e6940b58252ca573334cd74cf8622
   languageName: node
   linkType: hard
 
@@ -12873,6 +12890,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tdd-next-exersices@workspace:."
   dependencies:
+    "@storybook/addon-a11y": "npm:^7.6.6"
     "@storybook/addon-essentials": "npm:7.6.6"
     "@storybook/addon-interactions": "npm:7.6.6"
     "@storybook/addon-links": "npm:7.6.6"
