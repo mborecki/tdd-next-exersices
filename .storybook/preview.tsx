@@ -14,10 +14,7 @@ const preview: Preview = {
   decorators: [
     (story) => (
       <QueryClientProvider client={queryClient}>
-        <div style={{ outline: '1px red solid' }}>
           {story()}
-
-        </div>
       </QueryClientProvider>
     )
   ],
