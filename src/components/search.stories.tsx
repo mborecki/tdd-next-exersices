@@ -20,15 +20,15 @@ const meta = {
       action: 'onSearch'
     }
   },
-  play: async ({args, canvasElement}) => {
-    const input = canvasElement.querySelector('input');
-    const button = canvasElement.querySelector('button');
+  // play: async ({args, canvasElement}) => {
+  //   const input = canvasElement.querySelector('input');
+  //   const button = canvasElement.querySelector('button');
 
-    await userEvent.type(input!, 'foo', {
-      delay: 100
-    });
-    await userEvent.click(button!);
-  }
+  //   await userEvent.type(input!, 'foo', {
+  //     delay: 100
+  //   });
+  //   await userEvent.click(button!);
+  // }
 } satisfies Meta<typeof Search>;
 
 export default meta;
