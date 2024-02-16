@@ -16,6 +16,7 @@ export default function Search({ onSearch, label }: Props) {
     return <>
         {label && <p>{label}</p>}
         <input type="search" ref={inputRef} />
+        <p>fsfsfsrfsfsrgrsg</p>
         <button onClick={onClick}>Szukaj</button>
     </>
 }
