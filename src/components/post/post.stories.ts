@@ -10,6 +10,8 @@ const meta: Meta<typeof PostWidget> = {
 export default meta;
 type Story = StoryObj<typeof PostWidget>
 
+export const Default: Story = {};
+
 export const Mocked: Story = {
     parameters: {
         msw: [
